@@ -1,0 +1,13 @@
+/* hide scrollbar but allow scrolling */
+.section_one_card {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+.section_one_card::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
