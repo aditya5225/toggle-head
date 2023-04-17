@@ -1,0 +1,15 @@
+.collapse_icon .collapse_button>a[aria-expanded="true"]+.collapce_icon .bi-plus-circle {
+    display: none;
+}
+
+.collapse_icon .collapse_button>a[aria-expanded="false"]+.collapce_icon .bi-plus-circle {
+    display: initial;
+}
+
+.collapse_icon .collapse_button>a[aria-expanded="true"]+.collapce_icon .bi-dash-circle-fill {
+    display: initial;
+}
+
+.collapse_icon .collapse_button>a[aria-expanded="false"]+.collapce_icon .bi-dash-circle-fill {
+    display: none;
+}
