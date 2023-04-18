@@ -4,6 +4,7 @@ import BannerComp from './components/bannerComp/BannerComp';
 import SectionOneComp from './components/sectionOneComp/SectionOneComp';
 import SectionTwoComp from './components/SectionTwoComp';
 import FAQComponent from './components/faqComponent/FAQComponent';
+import FooterCmp from './components/FooterCmp';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <SectionOneComp />
       <SectionTwoComp />
       <FAQComponent />
+      <FooterCmp />
     </div>
   );
 }

@@ -31,14 +31,17 @@ const SectionTwoComp = () => {
 
     return (
         <div
-            className='container-fluid my-4 p-2'
+            className='container-fluid'
             style={{ backgroundColor: '#F6F6F6' }}
         >
-            <div className='row m-0 p-5'>
+            <div
+            className='container p-0 py-5'
+        >
+            <div className='row m-0'>
                 {
                     sampleRecords.map((rcdVal, rcdInd) => {
                         return (
-                            <div key={rcdInd} className='col-3 px-5'>
+                            <div key={rcdInd} className='col-12 text-center text-sm-left col-md-4 col-lg-3 pl-0 pr-0 pr-sm-5 my-3'>
                                 <div>
                                     <p> {rcdVal.title} </p>
                                     <h1> {rcdVal.count} </h1>
@@ -49,6 +52,7 @@ const SectionTwoComp = () => {
                         )
                     })
                 }
+            </div>
             </div>
         </div>
     )

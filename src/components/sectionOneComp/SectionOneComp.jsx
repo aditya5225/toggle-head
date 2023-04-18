@@ -3,24 +3,24 @@ import './sectionOneComp.css';
 
 const SectionOneComp = () => {
     return (
-        <div className='container p-0 section_one_comp'>
-            <div className='row mx-0 my-4'>
-                <div className='col-3 px-0 py-2 border-right'>
+        <div className='container px-4 px-sm-0 section_one_comp my-5'>
+            <div className='row justify-content-center mx-0 mb-5'>
+                <div className='col-12 col-md-4 col-lg-3 px-0 pr-2 text-center text-sm-left border-right'>
                     <h4> upcoming examinations </h4>
                     <p> inquiry about the examinations & register for the exams </p>
                 </div>
 
-                <div className='col-3 px-0 py-2 text-center'>
+                <div className='col-12 col-md-4 col-lg-3 px-0 text-center'>
                     <h5> 02th October 2014 </h5>
                     <p> Level 1 exam </p>
                 </div>
 
-                <div className='col-3 px-0 py-2 text-center'>
+                <div className='col-12 col-md-4 col-lg-3 px-0 text-center'>
                     <h5> 02th October 2014 </h5>
                     <p> Level 1 exam </p>
                 </div>
 
-                <div className='col-3 px-0 py-2 text-center'>
+                <div className='col-12 col-md-4 col-lg-3 px-0 text-center'>
                     <h5> 02th October 2014 </h5>
                     <p> Level 1 exam </p>
                 </div>
@@ -35,7 +35,7 @@ const SectionOneComp = () => {
                         return (
                             <div
                                 key={cardVal}
-                                className='col-4 p-3 mr-4'
+                                className='col-8 col-md-5 col-lg-4 p-3 mr-4'
                                 style={{ backgroundColor: '#12406F', borderRadius: '15px' }}
                             >
                                 <h5> Lorem Ipsum </h5>
