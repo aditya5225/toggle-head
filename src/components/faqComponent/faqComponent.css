@@ -13,3 +13,7 @@
 .custome_collapse .collapse_button>a[aria-expanded="false"]+.collapce_icon .bi-dash-circle-fill {
     display: none;
 }
+
+.custome_collapse .collapse_button>a[aria-expanded="true"] {
+    color: #12406F !important;
+}
