@@ -65,7 +65,7 @@ const NavbarComp = () => {
                         </div>
                     </li>
 
-                    <li className="nav-item dropdown mx-2">
+                    <li className="nav-item dropdown ml-2 mr-4">
                         <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Lorem ipsum
                         </a>
