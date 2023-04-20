@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarComp from './components/NavbarComp';
+import NavbarComp from './components/navbarComp/NavbarComp';
 import BannerComp from './components/bannerComp/BannerComp';
 import SectionOneComp from './components/sectionOneComp/SectionOneComp';
 import SectionTwoComp from './components/SectionTwoComp';

@@ -43,7 +43,7 @@ const SectionTwoComp = () => {
                             return (
                                 <div
                                     key={rcdInd}
-                                    className='col-12 text-center text-sm-left col-md-4 col-lg-3 pl-0 pr-0 pr-sm-5 my-3'
+                                    className='col-12 text-center text-md-left col-md-4 col-lg-3 pl-0 pr-0 pr-sm-5 my-3'
                                     style={{ color: '#12406F' }}
                                 >
                                     <div>

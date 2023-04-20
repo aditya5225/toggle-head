@@ -56,7 +56,7 @@ const FooterCmp = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-6 col-md my-3 text-center d-flex justify-content-end pl-0 pl-md-5 pr-0">
+                    <div className="col-12 col-lg my-3 text-center d-flex justify-content-start justify-content-start pl-0 pl-lg-5 pr-0">
                         <div className='text-left'>
                             <h5 className='mb-4'> Head Office </h5>
 
