@@ -6,7 +6,7 @@ const FooterCmp = () => {
             className="container-fluid text-white p-0"
             style={{ backgroundColor: '#092956' }}
         >
-            <div className='container p-0'>
+            <div className='container px-3 p-sm-0'>
                 <div className="row justify-content-center py-5 mx-0">
                     <div className="col-6 col-md my-3 text-center d-flex justify-content-start p-0">
                         <div className='text-left d-flex flex-column'>
