@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './sectionOneComp.css';
 
 const SectionOneComp = () => {
+
+    const cardsRef = useRef(null);
 
     const cradsData = [
         {
@@ -21,6 +23,17 @@ const SectionOneComp = () => {
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         }
     ]
+
+    const handleHorizantalScroll = (element, speed, distance, step) => {
+        let scrollAmount = 0;
+        const slideTimer = setInterval(() => {
+            element.scrollLeft += step;
+            scrollAmount += Math.abs(step);
+            if (scrollAmount >= distance) {
+                clearInterval(slideTimer);
+            }
+        }, speed);
+    };
 
     return (
         <div className='container px-4 px-sm-0 section_one_comp my-5'>
@@ -81,9 +94,7 @@ const SectionOneComp = () => {
                         top: '50%',
                         transform: 'translateY(-50%)',
                     }}
-                    onClick={() => {
-                        // ary.push(ary.shift())
-                    }}
+                    onClick={() => handleHorizantalScroll(cardsRef.current, 25, 300, -10)}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
                         <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
@@ -98,6 +109,7 @@ const SectionOneComp = () => {
                         top: '50%',
                         transform: 'translateY(-50%)',
                     }}
+                    onClick={() => handleHorizantalScroll(cardsRef.current, 25, 300, 10)}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -105,6 +117,7 @@ const SectionOneComp = () => {
                 </div>
 
                 <div
+                    ref={cardsRef}
                     className='w-100 m-0 d-flex overflow-auto section_one_card'
                     style={{ borderRadius: '15px' }}
                 >
